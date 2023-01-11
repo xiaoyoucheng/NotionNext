@@ -48,11 +48,12 @@ export default function SideRight(props) {
           <Catalog toc={post.toc} />
         </Card>}
         {slot}
+        {CONFIG_HEXO.WIDGET_LATEST_POSTS && latestPosts && latestPosts.length > 0 && <Card>
+          <LatestPostsGroup {...props} />
+        </Card>}
       </div>
 
-      {CONFIG_HEXO.WIDGET_LATEST_POSTS && latestPosts && latestPosts.length > 0 && <Card>
-        <LatestPostsGroup {...props} />
-      </Card>}
+
 
       {BLOG.COMMENT_WALINE_SERVER_URL && BLOG.COMMENT_WALINE_RECENT && <HexoRecentComments/>}
 
