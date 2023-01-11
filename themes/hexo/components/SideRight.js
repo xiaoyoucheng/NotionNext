@@ -42,11 +42,6 @@ export default function SideRight(props) {
           <TagGroups tags={tags} currentTag={currentTag} />
         </Card>
       )}
-      {CONFIG_HEXO.WIDGET_LATEST_POSTS && latestPosts && latestPosts.length > 0 && <Card>
-        <LatestPostsGroup {...props} />
-      </Card>}
-
-      {BLOG.COMMENT_WALINE_SERVER_URL && BLOG.COMMENT_WALINE_RECENT && <HexoRecentComments/>}
 
       <div className='sticky top-20'>
         {post && post.toc && post.toc.length > 1 && <Card>
@@ -54,6 +49,12 @@ export default function SideRight(props) {
         </Card>}
         {slot}
       </div>
+
+      {CONFIG_HEXO.WIDGET_LATEST_POSTS && latestPosts && latestPosts.length > 0 && <Card>
+        <LatestPostsGroup {...props} />
+      </Card>}
+
+      {BLOG.COMMENT_WALINE_SERVER_URL && BLOG.COMMENT_WALINE_RECENT && <HexoRecentComments/>}
 
     </div>
   )
