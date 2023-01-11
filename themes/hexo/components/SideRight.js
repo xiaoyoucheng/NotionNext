@@ -47,10 +47,10 @@ export default function SideRight(props) {
         {post && post.toc && post.toc.length > 1 && <Card>
           <Catalog toc={post.toc} />
         </Card>}
-        {slot}
         {CONFIG_HEXO.WIDGET_LATEST_POSTS && latestPosts && latestPosts.length > 0 && <Card>
           <LatestPostsGroup {...props} />
         </Card>}
+        {slot}
       </div>
 
 
