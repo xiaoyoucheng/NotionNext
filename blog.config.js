@@ -11,7 +11,7 @@ const BLOG = {
   APPEARANCE: process.env.NEXT_PUBLIC_APPEARANCE || 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'youcheng', // 您的昵称 例如 tangly1024
-  BIO: process.env.NEXT_PUBLIC_BIO || '一个小小的程序员啊', // 作者简介
+  BIO: process.env.NEXT_PUBLIC_BIO || '很长一段时间后，我发现我并不是喜欢写代码，而是喜欢好玩的东西。', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://blog.youcheng.tk', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '博客, 动漫', // 网站关键词 英文逗号隔开
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
